@@ -1,8 +1,7 @@
 import express from 'express';
+import { create } from '../controllers/user/index.controller.js'
 
 const router = express.Router();
 
-router.post('/create', (req, res) => {
-    res.send('ruta de creacion de usuarios')
-})
+router.post('/create', create)
 export default router;

@@ -5,6 +5,4 @@ const router = express.Router();
 
 router.use('/api/user', userRouter);
 
-export default {
-    router
-}
+export default router
