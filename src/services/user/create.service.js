@@ -13,7 +13,7 @@ const main = async (user) => {
         if (respond.affectedRows !== 1) {
             errorsHelper.conflictError('Error when inserting user', 'CREATE_USER_ERROR');
         }
-        respond.insertId;                
+        return respond.insertId;
     } catch (error) {
         errorsHelper.internalServerError(error.message, 'CREATE_USER_ERROR')
     }
